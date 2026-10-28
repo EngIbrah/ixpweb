@@ -1,0 +1,236 @@
+:root {
+  --mission-red: #e8a93a;
+  --mission-gold: #e8a93a;
+  --mission-navy: #3853a4;
+  --mission-muted: #64748b;
+  --mission-border: #e2e8f0;
+}
+
+.home-why {
+  padding: 80px 0;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.home-why__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+/* Header Section */
+.home-why__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+.home-why__heading-left {
+  max-width: 750px;
+}
+
+.home-why__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--mission-muted);
+  margin-bottom: 12px;
+}
+
+.home-why__eyebrow span {
+  width: 24px;
+  height: 2px;
+  background-color: var(--mission-gold);
+}
+
+.home-why__heading h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--mission-navy);
+  line-height: 1.2;
+}
+
+.home-why__heading h2 span {
+  color: var(--mission-gold);
+}
+
+.home-why__intro {
+  max-width: 420px;
+  font-size: 1.05rem;
+  color: var(--mission-muted);
+  line-height: 1.5;
+}
+
+/* Asymmetric Main Grid */
+.home-why__layout {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+/* 2x2 Feature Cards Grid */
+.home-why__cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.home-why__card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid var(--mission-border);
+  box-shadow: 0 10px 25px rgba(23, 38, 58, 0.04);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.home-why__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 32px rgba(23, 38, 58, 0.08);
+  border-color: rgba(56, 83, 164, 0.3);
+}
+
+.home-why__badge-top {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+  margin-bottom: 4px;
+}
+
+.home-why__icon-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(23, 38, 58, 0.12);
+}
+
+.home-why__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.home-why__card-content {
+  padding: 12px 20px 20px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.home-why__card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--mission-navy);
+  margin-bottom: 8px;
+}
+
+.home-why__card-desc {
+  font-size: 0.875rem;
+  color: var(--mission-muted);
+  line-height: 1.5;
+}
+
+.home-why__card-footer {
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+/* Card Theme Variations */
+.home-why__card--gold .home-why__icon-circle,
+.home-why__card--gold .home-why__card-footer {
+  background-color: var(--mission-gold);
+  color: #1e293b;
+}
+
+.home-why__card--navy .home-why__icon-circle,
+.home-why__card--navy .home-why__card-footer {
+  background-color: var(--mission-navy);
+}
+
+/* Center Column Styling */
+.home-why__center-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.home-why__dark-box {
+  background: var(--mission-navy);
+  color: #ffffff;
+  padding: 32px 28px;
+  border-radius: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-why__dark-box h3 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.home-why__dark-box p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.55;
+}
+
+/* Image Slots */
+.home-why__img-wrapper {
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid var(--mission-border);
+}
+
+.home-why__img-wrapper--secondary {
+  height: 220px;
+}
+
+.home-why__right-col {
+  height: 100%;
+}
+
+.home-why__img-wrapper--primary {
+  height: 100%;
+  min-height: 480px;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1100px) {
+  .home-why__layout {
+    grid-template-columns: 1fr;
+  }
+  .home-why__right-col {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-why__heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .home-why__cards-grid {
+    grid-template-columns: 1fr;
+  }
+}

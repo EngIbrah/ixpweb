@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand */
+  --color-brand: #3853a4;
+  --color-brand-dark: #263c7e;
+  --color-brand-tint: #eef1f9;
+
+  /* Reserved-purpose accents -- used sparingly, one job each */
+  --color-live: #1f7a4d; /* status: operational only */
+  --color-accent: #e8a93a; 
+
+  /* Neutrals */
+  --color-ink: #171a2b;
+  --color-paper: #f8f7f3;
+  --color-line: #e4e1d8;
+  --color-muted: #5b5f76;
+
+  --font-display: var(--font-jost);
+  --font-body: var(--font-worksans);
+}
+
+@theme inline {
+  --color-brand: var(--color-brand);
+  --color-brand-dark: var(--color-brand-dark);
+  --color-brand-tint: var(--color-brand-tint);
+  --color-live: var(--color-live);
+  --color-accent: var(--color-accent);
+  --color-ink: var(--color-ink);
+  --color-paper: var(--color-paper);
+  --color-line: var(--color-line);
+  --color-muted: var(--color-muted);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+}
+
+* {
+  border-color: var(--color-line);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+::selection {
+  background: var(--color-brand);
+  color: white;
+}
+
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 3px;
+}
