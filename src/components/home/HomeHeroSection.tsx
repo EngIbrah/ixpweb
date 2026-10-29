@@ -13,7 +13,7 @@ export function HomeHeroSection() {
         subtitle="Six Internet Exchange Points where local networks connect directly: faster, cheaper, and more resilient than routing through servers abroad."
         ctaLabel="Explore the points"
         ctaHref="#points"
-        imageSrc="https://picsum.photos/seed/tz-hero-network/1400/1000"
+        imageSrc="/images/hero1.jpg"
         imageAlt="Network infrastructure representing a TISPA internet exchange point"
         priority
         overlay
