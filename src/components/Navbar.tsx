@@ -7,12 +7,12 @@ import { useState } from "react";
 
 // Top-level station links
 const stationLinks = [
-  { slug: "tix", label: "Dar" },
-  { slug: "arusha", label: "Arusha" },
-  { slug: "zanzibar", label: "Zanzibar" },
-  { slug: "mbeya", label: "Mbeya" },
-  { slug: "mwanza", label: "Mwanza" },
-  { slug: "dodoma", label: "Dodoma" },
+  { slug: "tix", label: "TIX" },
+  { slug: "arusha", label: "ARUSHA" },
+  { slug: "zanzibar", label: "ZANZIBAR" },
+  { slug: "mbeya", label: "MBEYA" },
+  { slug: "mwanza", label: "MWANZA" },
+  { slug: "dodoma", label: "DODOMA" },
 ];
 
 export function Navbar() {
