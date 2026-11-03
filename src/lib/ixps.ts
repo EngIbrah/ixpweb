@@ -80,7 +80,7 @@ export const ixps: Ixp[] = [
     heroImage: "/images/server3.jpg",
     facilityImage: "/images/dar.png",
     contactEmail: "info@tispa.or.tz",
-    contactPhone: "+255 XX XXX XXXX",
+    contactPhone: "+255-713-301427",
   },
   {
     slug: "arusha",
@@ -117,7 +117,7 @@ export const ixps: Ixp[] = [
     heroImage: "/images/arusha.jpg",
     facilityImage: "/images/arusha.png",
     contactEmail: "info@tispa.or.tz",
-    contactPhone: "+255 XX XXX XXXX",
+    contactPhone: "+255-713-301427",
   },
   {
     slug: "dodoma",
@@ -153,7 +153,7 @@ export const ixps: Ixp[] = [
     heroImage: "/images/dodoma.png",
     facilityImage: "/images/dodoma.png",
     contactEmail: "info@tispa.or.tz",
-    contactPhone: "+255 XX XXX XXXX",
+    contactPhone: "+255-713-301427",
   },
   {
     slug: "mbeya",
@@ -188,7 +188,7 @@ export const ixps: Ixp[] = [
     heroImage: "/images/mbeya.png",
     facilityImage: "/images/mbeya.png",
     contactEmail: "info@tispa.or.tz",
-    contactPhone: "+255 XX XXX XXXX",
+    contactPhone: "+255-713-301427",
   },
   {
     slug: "mwanza",
@@ -224,7 +224,7 @@ export const ixps: Ixp[] = [
     heroImage: "/images/hero1.jpg",
     facilityImage: "/images/mwanza.png",
     contactEmail: "info@tispa.or.tz",
-    contactPhone: "+255 XX XXX XXXX",
+    contactPhone: "+255-713-301427",
   },
   {
     slug: "zanzibar",
@@ -260,7 +260,7 @@ export const ixps: Ixp[] = [
     heroImage: "/images/hero1.jpg",
     facilityImage: "/images/zanzibar.png",
     contactEmail: "info@tispa.or.tz",
-    contactPhone: "+255 XX XXX XXXX",
+    contactPhone: "+255-713-301427",
   },
 ];
 
